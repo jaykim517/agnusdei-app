@@ -16,14 +16,13 @@
 <meta name="theme-color" content="#F4F3EE">
 <style>
   html,body{margin:0;height:100%;background:#F4F3EE;overflow:hidden}
-  /* 아이폰 하단 홈 막대와 앱 메뉴가 겹치지 않게 여백 */
-  body{box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom);background:#FFFFFF}
-  iframe{display:block;width:100%;height:100%;border:0;background:#F4F3EE}
+  /* 앱 화면을 화면 맨 아래까지 꽉 채움 (하단 여백은 앱 메뉴 쪽에서 처리) */
+  iframe{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;border:0;background:#F4F3EE}
 </style>
 </head>
 <body>
 <!-- 청년회 앱(Google Apps Script 웹앱)을 화면 가득 띄움 -->
-<iframe src="https://script.google.com/macros/s/AKfycbwfy_aBHWWbNI_FhFEpdzSoQLoxI2ODwAi_TRJegJ_JVvO0Ew5uih6Plauhqyh5LgC3cw/exec"
+<iframe src="https://script.google.com/macros/s/AKfycbwfy_aBHWWbNI_FhFEpdzSoQLoxI2ODwAi_TRJegJ_JVvO0Ew5uih6Plauhqyh5LgC3cw/exec?app=1"
         title="Agnus Dei 청년회" allow="clipboard-write"></iframe>
 </body>
 </html>
